@@ -1,0 +1,100 @@
+/* Tema oscuro personalizado (se carga después de Bootstrap) */
+:root {
+    --color-fondo: #12141c;
+    --color-superficie: #1e2230;
+    --color-superficie-2: #2a2f42;
+    --color-texto: #e8eaf0;
+    --color-acento: #f5a524;
+    --color-acento-hover: #ffb938;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #0b0d13 !important;
+    background-image: none !important;
+    border-bottom: 3px solid var(--color-acento);
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: var(--color-acento) !important;
+}
+
+/* Textos que Bootstrap deja en negro */
+.text-black {
+    color: var(--color-texto) !important;
+}
+
+/* Formulario de categorías */
+.bg-light {
+    background-color: var(--color-superficie) !important;
+    color: var(--color-texto);
+}
+.form-select {
+    background-color: var(--color-superficie-2);
+    color: var(--color-texto);
+    border-color: #3b4160;
+}
+.form-select:focus {
+    border-color: var(--color-acento);
+    box-shadow: 0 0 0 .25rem rgba(245, 165, 36, .25);
+}
+
+/* Tarjetas de recetas */
+.card {
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+    border: 1px solid #333955;
+    transition: transform .15s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* Botones principales */
+.btn-danger {
+    --bs-btn-bg: var(--color-acento);
+    --bs-btn-border-color: var(--color-acento);
+    --bs-btn-color: #12141c;
+    --bs-btn-hover-bg: var(--color-acento-hover);
+    --bs-btn-hover-border-color: var(--color-acento-hover);
+    --bs-btn-hover-color: #12141c;
+    --bs-btn-active-bg: var(--color-acento-hover);
+    --bs-btn-active-border-color: var(--color-acento-hover);
+    --bs-btn-active-color: #12141c;
+    font-weight: 600;
+}
+
+/* Modal */
+.modal-content {
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+}
+.modal-header,
+.modal-footer {
+    border-color: #333955;
+}
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+.list-group-item {
+    background-color: var(--color-superficie-2);
+    color: var(--color-texto);
+    border-color: #3b4160;
+}
+
+/* Toast */
+.toast {
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+}
+.toast-header {
+    background-color: var(--color-acento) !important;
+}
+.toast-header strong {
+    color: #12141c !important;
+}
