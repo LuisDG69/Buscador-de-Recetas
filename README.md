@@ -1,7 +1,6 @@
 # Buscador de Recetas
 
-App web con HTML, Bootstrap 5.2.2 y JavaScript que consume [TheMealDB](https://www.themealdb.com).
-Permite filtrar recetas por categoría, ver el detalle en un modal y guardar favoritos en `localStorage`.
+
 
 ## Estructura
 
